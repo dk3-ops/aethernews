@@ -30,7 +30,6 @@ export const configurations = {
   
   // Logging
   logging: config.logging,
-  sentry: config.sentry,
   
   // Kubernetes
   kubernetes: config.kubernetes,
@@ -79,8 +78,8 @@ export async function initializeAllConfigs() {
     console.log(`   OAuth Providers:`);
     console.log(`      • GitHub: ${authConfig.oauth.github.enabled ? '✓' : '✗'}`);
     console.log(`      • Google: ${authConfig.oauth.google.enabled ? '✓' : '✗'}`);
-    console.log(`      • Facebook: ${authConfig.oauth.facebook.enabled ? '✗' : '✗'}`);
-    console.log(`      • Microsoft: ${authConfig.oauth.microsoft.enabled ? '✗' : '✗'}\n`);
+    console.log(`      • Facebook: ${authConfig.oauth.facebook.enabled ? '✓' : '✗'}`);
+    console.log(`      • Microsoft: ${authConfig.oauth.microsoft.enabled ? '✓' : '✗'}\n`);
 
     // Print storage info
     console.log(`💾 Storage`);
